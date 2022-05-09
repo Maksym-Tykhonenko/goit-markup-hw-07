@@ -3,7 +3,6 @@
     width: 570px;
     position: relative;
 }
-
 .form__tex {
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
@@ -33,12 +32,10 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     text-align: left;
+    &:focus {
+        outline: transparent;
+    }
 }
-
-.form__input:focus {
-    outline: transparent;
-}
-
 .form__icon {
     position: absolute;
     right: 28px;

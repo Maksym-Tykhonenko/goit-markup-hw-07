@@ -31,20 +31,18 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-cubic-bezier);
-}
-
-.header-nav__link.current::after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    width: 100%;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-}
-
-.header-nav__link:hover,
-.header-nav__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+    &.current::after {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--accent-color);
+    }
 }

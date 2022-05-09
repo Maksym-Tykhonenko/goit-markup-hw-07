@@ -5,7 +5,7 @@
     display: flex;
 }
 
-.footer .container {
+.footer__container {
     display: flex;
 }
 
@@ -44,12 +44,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--primary-cubic-bezier);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.address__link:hover,
-.address__link:focus {
-    color: var(--accent-color);
-}
+
 .soc-container {
     width: 206px;
     margin-right: 93px;
